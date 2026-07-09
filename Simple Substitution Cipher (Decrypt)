@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    printf("Use frequency analysis.\n");
+    printf("Guess: Most frequent symbol = E\n");
+    printf("Find THE, then replace remaining letters.\n");
+    return 0;
+}
