@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    char p[100];
+    int a, b, i;
+    printf("Enter text: ");
+    scanf("%s", p);
+    printf("Enter a and b: ");
+    scanf("%d%d", &a, &b);
+    printf("Cipher: ");
+    for(i = 0; p[i] != '\0'; i++)
+        printf("%c", ((a * (p[i] - 'A') + b) % 26) + 'A');
+    return 0;
+}
