@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    printf("Plain : ABCDEFGHIJKLMNOPQRSTUVWXYZ\n");
+    printf("Cipher: CIPHERABDFGJKLMNOQSTUVWXYZ\n");
+    return 0;
+}
