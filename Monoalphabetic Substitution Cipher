@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(
+{
+    char text[100];
+    char plain[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    char cipher[] = "QWERTYUIOPASDFGHJKLZXCVBNM";
+    int i, j;
+    printf("Enter Plain Text (CAPITAL letters): ");
+    scanf("%s", text);
+    for (i = 0; text[i] != '\0'; i++) {
+        for (j = 0; j < 26; j++) {
+            if (text[i] == plain[j]) {
+                text[i] = cipher[j];
+                break;
+            }
+        }
+    }
+    printf("Cipher Text: %s\n", text);
+    return 0;
+}
