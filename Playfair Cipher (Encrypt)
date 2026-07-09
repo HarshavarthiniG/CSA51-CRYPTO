@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    printf("Message: MUST SEE YOU OVER CADOGAN WEST COMING AT ONCE\n");
+    printf("Encrypt using given Playfair matrix.\n");
+    return 0;
+}
