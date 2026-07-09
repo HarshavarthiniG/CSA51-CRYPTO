@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    printf("Most frequent letters: B, U\n");
+    printf("Assume B -> E and U -> T.\n");
+    printf("Find keys (a,b) using frequency analysis.\n");
+    return 0;
+}
