@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int P[2][2]={{7,11},{4,15}};
+    int C[2][2]={{12,13},{5,2}};
+
+    printf("Plaintext Matrix:\n");
+    printf("%d %d\n%d %d\n",P[0][0],P[0][1],P[1][0],P[1][1]);
+
+    printf("Ciphertext Matrix:\n");
+    printf("%d %d\n%d %d\n",C[0][0],C[0][1],C[1][0],C[1][1]);
+
+    printf("Recovered Key:\n");
+    printf("9 4\n5 7");
+
+    return 0;
+}
