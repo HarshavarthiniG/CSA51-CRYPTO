@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char p[] = "sendmoremoney";
+    int key[] = {9,0,1,7,23,15,21,14,11,11,2,8,9};
+    int i;
+    printf("Ciphertext: ");
+    for(i=0; i<strlen(p); i++) {
+        char c = ((p[i]-'a'+key[i]) % 26) + 'A';
+        printf("%c", c);
+    }
+    return 0;
+}
