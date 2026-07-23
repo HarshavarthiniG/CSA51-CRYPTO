@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char ct[] = "UKIXUK";
+    int i;
+    printf("Plaintext: ");
+    for(i = 0; i < strlen(ct); i += 2) {
+        int a = ct[i] - 'A';
+        int b = ct[i+1] - 'A';
+        int p1 = (5*a + 12*b) % 26;
+        int p2 = (15*a + 25*b) % 26;
+        printf("%c%c", p1 + 'a', p2 + 'a');
+    }
+    return 0;
+}
