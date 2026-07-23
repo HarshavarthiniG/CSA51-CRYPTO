@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    int key[2][2] = {{9,4},{5,7}};
+    char pt[] = "meetme";
+    int i;
+    printf("Ciphertext: ");
+    for(i = 0; i < strlen(pt); i += 2) {
+        int a = pt[i] - 'a';
+        int b = pt[i+1] - 'a';
+        int c1 = (9*a + 4*b) % 26;
+        int c2 = (5*a + 7*b) % 26;
+        printf("%c%c", c1 + 'A', c2 + 'A');
+    }
+    return 0;
+}
